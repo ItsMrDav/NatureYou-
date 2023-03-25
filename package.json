@@ -1,0 +1,14 @@
+{
+  "name": "natureyou-project",
+  "version": "1.0.0",
+  "description": "Landing page for NatureYou",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Davut",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

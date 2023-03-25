@@ -1,0 +1,128 @@
+.footer {
+  background-color: $color-gray-dark-3;
+  padding: 10rem 0 0 0;
+  font-size: 1.4rem;
+  color: $color-gray-light-1;
+
+  @include respond(tab-port) {
+    padding: 8rem 0 0 0 0;
+  }
+
+  &__logo-box {
+    text-align: center;
+
+    @include respond(tab-port) {
+      margin-bottom: 6rem !important;
+    }
+  }
+
+  &__logo {
+    width: 15rem;
+
+    &-text {
+      margin-top: -1rem;
+      font-size: 3rem;
+
+      background-image: linear-gradient(
+        to right,
+        $color-primary-light,
+        $color-primary-dark
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+
+  &__navigation {
+    border-top: 0.1rem solid $color-gray-dark;
+    padding-top: 2rem;
+    display: inline-block;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: inline-block;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    transition: all 0.2s;
+    &:link,
+    &:visited {
+      color: $color-gray-light-1;
+      background-color: $color-gray-dark-3;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+      transform: rotate(-5deg) scale(1.2);
+    }
+  }
+
+  &__social {
+    border-top: 0.1rem solid $color-gray-dark;
+    padding-top: 2rem;
+    // display: inline-block;
+    float: right;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+      float: none;
+    }
+  }
+
+  &__paragraph {
+    display: inline-block;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+  }
+
+  &__social-list {
+    padding-left: 5rem;
+
+    @include respond(tab-port) {
+      padding-left: 1rem;
+    }
+  }
+
+  &__social-icon {
+    width: 4.5rem;
+
+    @include respond(tab-land) {
+      width: 2rem;
+    }
+  }
+
+  &__copy {
+    text-align: center;
+    margin-top: 10rem;
+
+    &-text {
+      color: $color-primary-light;
+
+      & a {
+        text-decoration: none;
+        color: $color-primary-light;
+      }
+    }
+  }
+}
