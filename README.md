@@ -15,7 +15,7 @@ Website provides a user experience with a simple and easy-to-use interface that 
 [NatureYou Link](https://natureyou.netlify.app/)
 ## Tech Stack
 
-**Client:** HTML, CSS, SASS
+**Client:** HTML, Vanilla CSS, SASS
 
 
 
